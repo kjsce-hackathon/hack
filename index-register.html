@@ -168,10 +168,17 @@ function register()
     var jsonstr=JSON.stringify(ItemJSON);
     xmlhttp.send(jsonstr);
     alert(xmlhttp.responseText);
-    if(response.error == "false")
+    // console.log("------>>>>>>>", response.error);
+    var status = jsonResponse["error"];
+console.log(jsonResponse["error"]);
+    console.log("------>>>>>>>", status);
+    if(status == false)
     {
-      window.location = "file:///C:/Users/HP/Desktop/kjscehack/HTML/timeline.html";
+      console.log("I am inside if");
+      window.location = "file:///C:/Users/HP/Desktop/hack_kj/hack/timeline.html";
     }
+    else
+    console.log("out of if");
     // document.getElementById("div").innerHTML = xmlhttp.statusText + ":" + xmlhttp.status + "<BR><textarea rows='100' cols='100'>" + xmlhttp.responseText + "</textarea>";
 }
 
@@ -202,10 +209,18 @@ function register()
     var jsonstr=JSON.stringify(ItemJSON);
     xmlhttp.send(jsonstr);
     alert(xmlhttp.responseText);
-    if(response.error == "false")
+    var data=xmlhttp.responseText;
+var jsonResponse = JSON.parse(data);
+var status = jsonResponse["error"];
+console.log(jsonResponse["error"]);
+    console.log("------>>>>>>>", status);
+    if(status == false)
     {
+      console.log("I am inside if");
       window.location = "file:///C:/Users/HP/Desktop/hack_kj/hack/timeline.html";
     }
+    else
+    console.log("out of if");
     // document.getElementById("div").innerHTML = xmlhttp.statusText + ":" + xmlhttp.status + "<BR><textarea rows='100' cols='100'>" + xmlhttp.responseText + "</textarea>";
 }
 
