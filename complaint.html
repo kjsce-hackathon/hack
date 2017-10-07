@@ -1,0 +1,194 @@
+ <!DOCTYPE html> 
+                <html lang="en"> 
+                    <head> 
+                        <meta http-equiv="content-type" content="text/html; charset=UTF-8">  
+                        <meta charset="utf-8"> 
+                        <title>Bootstrap Preview</title> 
+                         
+                        
+                        <link rel="stylesheet" href="css/bootstrap.min.css" /> 
+                        <link rel="shortcut icon" href="/bootstrap/img/favicon.ico"> 
+                        <link rel="apple-touch-icon" href="/bootstrap/img/apple-touch-icon.png"> 
+                        <link rel="apple-touch-icon" sizes="72x72" href="/bootstrap/img/apple-touch-icon-72x72.png"> 
+                        <link rel="apple-touch-icon" sizes="114x114" href="/bootstrap/img/apple-touch-icon-114x114.png"> 
+							<link rel="stylesheet" href="css/bootstrap.min.css" />
+						<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link href="css/emoji.css" rel="stylesheet">
+    
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
+    
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="images/fav.png"/>
+                       
+                        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" /> 
+                        <meta http-equiv="Pragma" content="no-cache" /> 
+                        <meta http-equiv="Expires" content="0" /> 
+                         
+                        <style id="bsCss">
+							 .btn.active, #dropdownMenu li.active
+							{
+							 background-color: #C6D6E3;
+							  color:#00205B
+							}
+
+							a,label,p,h1
+							{
+							  font-family: arial;
+							  color:#00205B
+							}
+							input [type="radio"]
+							{
+							  background-color:#efefef;
+							  border:none;
+							}
+							div
+							{
+							  margin-bottom:15px;
+							}
+
+                        </style> 
+                         
+                        <script src="<script src="js/jquery-3.1.1.min.js"></script>
+						<script src="js/bootstrap.min.js"></script>"></script> 
+                        
+                         
+                        <script id="bsJs"> 
+                        $(document).ready(function() { 
+                        	$('#dropdownMenu li').click(function(){
+  
+						$('#dropdownMenu li').removeClass('active');
+						$(this).addClass('active');
+  
+						});
+                        }); 
+                        </script> 
+                    </head> 
+                    <body>
+					  <!-- Header
+    ================================================= -->
+		<header id="header">
+      <nav class="navbar navbar-default navbar-fixed-top menu">
+        <div class="container">
+
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index-register.html"><img src="images/download.png" alt="logo" /></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right main-menu">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span><img src="images/down-arrow.png" alt="" /></span></a>
+                <ul class="dropdown-menu newsfeed-home">
+                 <li><a href="newsfeed.html">Newsfeed</a></li>
+                  <li><a href="newsfeed-people-nearby.html">Report a complaint</a></li>
+                  <li><a href="newsfeed-friends.html">status </a></li>
+                  
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Timeline <span><img src="images/down-arrow.png" alt="" /></span></a>
+                <ul class="dropdown-menu login">
+                  <li><a href="timeline.html">Report look up</a></li>
+                  
+                </ul>
+                 </li>
+			                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Logout <span><img src="images/down-arrow.png" alt="" /></span></a>
+
+              </li>
+             
+             
+            </ul>
+            <!--<form class="navbar-form navbar-right hidden-sm">
+              <div class="form-group">
+                <i class="icon ion-android-search"></i>
+                <input type="text" class="form-control" placeholder="Search friends, photos, videos">
+              </div>
+            </form>-->
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+      </nav>
+    </header>
+    <!--Header End-->
+                    	<div class="container">
+	<h1>Complaints</h1>
+  	<label>Please select</label>
+  	<form role="form">
+      
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-default active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked=""> Chase Status
+  </label>
+  <label class="btn btn-default">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Escalate Incident/Request
+  </label>
+  <label class="btn btn-default">
+    <input type="radio" name="options" id="option3" autocomplete="off"> Complaint
+  </label>
+  <label class="btn btn-default">
+    <input type="radio" name="options" id="option3" autocomplete="off"> Compliment
+  </label>
+</div>
+      
+ <div class="form-group">
+   <label for="exampleInputEmail1">Email address</label>
+   <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+ </div>
+  <div class="form-group">
+   <label for="exampleInputEmail1">Phone number</label>
+   <input type="tel" class="form-control" id="exampleInputPhone" placeholder="Enter phone">
+ </div>
+<label>Nature of the request</label>
+<div class="dropdown clearfix">
+   <ul class="dropdown-menu" id="dropdownMenu" role="menu" aria-labelledby="dropdownMenu" style="display:block;position:static;margin-bottom:5px;">
+      <li><a tabindex="-1">Traffic Rules violation</a></li>
+      <li><a tabindex="-1">Open manholes</a></li>
+      <li><a tabindex="-1">Dumped garbage</a></li>
+    
+
+
+    </ul>
+  </div>      
+  <div class="form-group">
+   <label for="exampleInputEmail1">Do you have a reference number?</label>
+   <input type="text" class="form-control" id="exampleInputRef" placeholder="Reference Number">
+ </div>    
+   <div class="form-group">
+   <label for="exampleInputEmail1">When did you first raise this issue?</label>
+   <input type="date" class="form-control" id="exampleInputDate" placeholder="Select Date">
+ </div>     
+    
+      
+       <label>Have you previously reported this to us?</label>
+      <br>
+       
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-default active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked=""> Yes
+  </label>
+  <label class="btn btn-default">
+    <input type="radio" name="options" id="option3" autocomplete="off"> No
+  </label>
+</div>
+<br><br>
+
+      
+ <button type="submit" class="btn btn-default">Submit</button>
+</form>
+  
+  
+</div>
+                    </body> 
+                </html>
+        
