@@ -169,6 +169,8 @@ function register()
     xmlhttp.send(jsonstr);
     alert(xmlhttp.responseText);
     // console.log("------>>>>>>>", response.error);
+    var data=xmlhttp.responseText;
+var jsonResponse = JSON.parse(data);
     var status = jsonResponse["error"];
 console.log(jsonResponse["error"]);
     console.log("------>>>>>>>", status);
